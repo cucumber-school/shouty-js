@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js -f node_modules/cucumber-pretty"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^6.0.5"
+    "cucumber": "^6.0.5",
+    "cucumber-pretty": "^6.0.0"
   }
 }
