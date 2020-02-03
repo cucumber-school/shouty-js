@@ -1,5 +1,6 @@
 const { Given, When, Then } = require('cucumber')
 const { Person } = require('../../src/shouty')
+const assert = require('assert');
 
 Given('Lucy is located {int}m from Sean', function (distance) {
   this.lucy = new Person
@@ -9,9 +10,9 @@ Given('Lucy is located {int}m from Sean', function (distance) {
 
 When('Sean shouts {string}', function (message) {
   this.sean.shout(message)
+  this.message = message
 });
 
 Then('Lucy hears Sean’s message', function () {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
+  assert.deepEqual(this.lucy.messagesHeard(), [this.message])
 });
