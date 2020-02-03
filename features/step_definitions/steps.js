@@ -1,7 +1,7 @@
 const { Given, When, Then } = require('cucumber')
 
-Given('Lucy is located 15m from Sean', function () {
-  // Write code here that turns the phrase above into concrete actions
+Given('Lucy is located {int}m from Sean', function (distance) {
+  console.log(distance)
   return 'pending'
 })
 
