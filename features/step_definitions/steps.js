@@ -1,8 +1,10 @@
-const { Given, When, Then } = require('cucumber');
+const { Given, When, Then } = require('cucumber')
+const { Person } = require('../../src/shouty')
 
 Given('Lucy is located {int}m from Sean', function (distance) {
-  console.log(distance);
-  return 'pending';
+  this.lucy = new Person
+  this.sean = new Person
+  this.lucy.move_to(distance)
 });
 
 When('Sean shouts “free bagels at Sean’s”', function () {
