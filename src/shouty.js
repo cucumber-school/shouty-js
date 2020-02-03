@@ -7,6 +7,9 @@ class Person {
     
   }
 
+  messagesHeard() {
+    return []
+  }
 }
 
 module.exports = { Person }
