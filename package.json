@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "lint": "eslint --fix src features"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cucumber": "^6.0.5"
+    "cucumber": "^6.0.5",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
   }
 }
